@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documented HIV/AIDS healing testimonies with hospital records - Jesus is LORD Radio">
+    <title>HIV/AIDS Healing Testimonies - Jesus Is LORD Radio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://static.wixstatic.com/media/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png/v1/fill/w_114,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png" alt="Jesus is LORD Radio Logo" class="logo-image">
+                    <div class="logo">
+                        <span class="logo-text">Jesus is LORD</span>
+                        <span class="logo-subtitle">Radio</span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">Jesusislordradio.org</a>
+                    <a href="library.html" class="nav-link">Library Of Messages</a>
+                    <a href="prophecies.html" class="nav-link">Prophecies</a>
+                    <a href="testimonies.html" class="nav-link active">Healing Testimonies</a>
+                    <a href="social-media.html" class="nav-link">Connect With Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="container">
+            <h1 class="hero-title">HIV/AIDS Healing Testimonies</h1>
+            <p class="hero-subtitle">Documented Medical Miracles Through Jesus is LORD Radio</p>
+        </div>
+    </section>
+
+    <!-- Testimonies Content -->
+    <section class="updates">
+        <div class="container">
+            <div class="content-page">
+                
+                <div class="intro-text">
+                    <p><strong>Every testimony documented here is verified with medical records from hospitals and health facilities across Kenya.</strong> These are real people who were diagnosed HIV positive and later tested HIV negative after listening to the mightiest prophet of the LORD through Jesus is LORD Radio ministry.</p>
+                </div>
+
+                <!-- Testimonies Layout: List + Detail View -->
+                <div class="testimonies-container">
+                    
+                    <!-- Left: List of Testimonies -->
+                    <div class="testimonies-list">
+                        <h2 class="list-title">Documented Healings (2)</h2>
+                        
+                        <div class="testimony-list-item active" data-testimony="beth">
+                            <div class="list-item-badge">HIV/AIDS</div>
+                            <h3 class="list-item-name">Beth</h3>
+                            <p class="list-item-location">📍 Wajua County Hospital</p>
+                            <p class="list-item-years">2011 - 2026 (15 years)</p>
+                            <div class="list-item-status">✓ Hospital Confirmed</div>
+                        </div>
+
+                        <div class="testimony-list-item" data-testimony="alfredo">
+                            <div class="list-item-badge">HIV/AIDS</div>
+                            <h3 class="list-item-name">Alfredo Mondi</h3>
+                            <p class="list-item-location">📍 Seia County Referral Hospital</p>
+                            <p class="list-item-years">2009 - 2026 (13 years on ARVs)</p>
+                            <div class="list-item-status">✓ Hospital Confirmed</div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Testimony Detail View -->
+                    <div class="testimony-detail-view">
+                        
+                        <div class="testimonies-grid">
+
+                    <!-- HIV/AIDS Testimony 1 - Beth -->
+                    <div class="testimony-card" data-category="hiv-aids" data-testimony="beth">
+                        <div class="testimony-header">
+                            <div class="testimony-badge hiv-badge">HIV/AIDS HEALING</div>
+                            <span class="testimony-date">2011 - February 19, 2026</span>
+                        </div>
+                        <div class="testimony-profile">
+                            <div class="profile-photo">
+                                <img src="https://via.placeholder.com/100" alt="Beth">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Beth</h3>
+                                <p class="location">Fula Sereno / Wajua County Hospital, Kenya</p>
+                                <p class="age">15 Years HIV Positive - NOW NEGATIVE!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimony-timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-icon">📋</span>
+                                <div class="timeline-content">
+                                    <strong>2011</strong>
+                                    <p>Tested HIV POSITIVE at Wajua County Hospital. Enrolled in clinical care and treatment program. Given lifetime medication regimen.</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">📄 Hospital Medical Record</span>
+                                        <span class="evidence-tag">🏥 HMIS Documentation</span>
+                                        <span class="evidence-tag">💊 Treatment History</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">📻</span>
+                                <div class="timeline-content">
+                                    <strong>During Healing Crusade</strong>
+                                    <p>At home in Bunga, listened to the healing crusade at Ruringi Stadium LIVE through <strong>Jesus is LORD Radio</strong>. Heard the mightiest prophet of the LORD pray and cast out HIV/AIDS three times over the radio. "I hear all kinds of sicknesses, even HIV AIDS... Leave your blood in the mighty name of Jesus!"</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">📻 Radio Broadcast</span>
+                                        <span class="evidence-tag">🎤 Prophet's Prayer</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">✨</span>
+                                <div class="timeline-content">
+                                    <strong>SLAIN IN THE SPIRIT - At Home!</strong>
+                                    <p>"I was slain by the Holy Spirit here in Bunga by listening through Jesus is LORD Radio. When I woke up, I felt totally different in my body. It was like COLD WATER had been poured in my bones."</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">🙏 Holy Spirit Encounter</span>
+                                        <span class="evidence-tag">💫 Physical Sensation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">🔬</span>
+                                <div class="timeline-content">
+                                    <strong>First Negative Test</strong>
+                                    <p>After the prophet cast HIV virus three times, Beth returned to her own doctor at Wajua County Hospital. TESTED HIV NEGATIVE! Virus undetectable. Medical team amazed.</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ First Negative Result</span>
+                                        <span class="evidence-tag">🏥 Same Hospital</span>
+                                        <span class="evidence-tag">👨‍⚕️ Same Doctor</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">🔬</span>
+                                <div class="timeline-content">
+                                    <strong>Confirmatory Test - ANALYZER</strong>
+                                    <p>Three months after first negative test, hospital conducted confirmatory ANALYZER test (advanced medical equipment). Result: HIV NEGATIVE CONFIRMED. Virus completely gone from bloodstream!</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ Analyzer Test Negative</span>
+                                        <span class="evidence-tag">🔬 Advanced Testing</span>
+                                        <span class="evidence-tag">📄 Lab Documentation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item highlight">
+                                <span class="timeline-icon">📋</span>
+                                <div class="timeline-content">
+                                    <strong>February 19, 2026 - PUBLIC DECLARATION</strong>
+                                    <p><strong>MEDICAL RECORDS RELEASED:</strong> Beth returned to Wajua County Hospital and gave written consent for her medical records to be shared publicly. Dr. David David, Medical Superintendent, confirmed on camera: "Your HIV test was POSITIVE... This was tested... And you are HIV NEGATIVE and you're no longer on treatment... That is the record that is here at the hospital."</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ Official Hospital Statement</span>
+                                        <span class="evidence-tag">📹 Doctor's Video Confirmation</span>
+                                        <span class="evidence-tag">📄 Medical Records Released</span>
+                                        <span class="evidence-tag">🏥 County Hospital Documentation</span>
+                                        <span class="evidence-tag">✍️ Patient Consent Form</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimony-quote">
+                            <p>"In the year 2011, I was tested and found to be HIV positive and enrolled on clinical care. I happened to listen to the meeting of the mightiest prophet of the LORD in a healing crusade through Jesus is LORD Radio. The mightiest prophet of the LORD prayed and cast HIV/AIDS three times. I was slain by the Holy Spirit in Bunga by listening through Jesus is LORD Radio. When I woke up, I felt totally different - like cold water had been poured in my bones. I went back to Wajua County Hospital to my own doctor and I was tested and found to be HIV NEGATIVE!"</p>
+                            <span class="quote-author">- Beth, Fula Sereno</span>
+                        </div>
+
+                        <div class="testimony-footer">
+                            <button class="view-evidence-btn">📂 View All Evidence</button>
+                            <button class="share-testimony-btn">📤 Share Testimony</button>
+                        </div>
+                    </div>
+
+                    <!-- HIV/AIDS Testimony 2 - Alfredo -->
+                    <div class="testimony-card" data-category="hiv-aids" data-testimony="alfredo" style="display: none;">
+                        <div class="testimony-header">
+                            <div class="testimony-badge hiv-badge">HIV/AIDS HEALING</div>
+                            <span class="testimony-date">2009 - February 21, 2026</span>
+                        </div>
+                        <div class="testimony-profile">
+                            <div class="profile-photo">
+                                <img src="https://via.placeholder.com/100" alt="Alfredo Mondi">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Alfredo Mondi</h3>
+                                <p class="location">Seia County Referral Hospital, Kenya</p>
+                                <p class="age">13 Years HIV Positive (Since Age 2) - NOW NEGATIVE!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimony-timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-icon">👶</span>
+                                <div class="timeline-content">
+                                    <strong>August 17, 2009 - HIV POSITIVE at Age 2</strong>
+                                    <p>After the death of both parents, Alfredo's grandmother took him to Seia County Referral Hospital. <strong>TESTED HIV POSITIVE.</strong> Enrolled immediately into HIV care program. Patient Unique Number: 14080-10378. National ID: MOH1659084787. Initial CD4 count: 330 cells. Lowest CD4: <strong>35 cells</strong> (normal range 445-1497). Classified as WHO Stage 2.</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">📄 Hospital Medical Record</span>
+                                        <span class="evidence-tag">🏥 HMIS Documentation</span>
+                                        <span class="evidence-tag">👶 Orphan Vulnerable Child Program</span>
+                                        <span class="evidence-tag">🆔 Birth Certificate: 7361344</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">💊</span>
+                                <div class="timeline-content">
+                                    <strong>August 11, 2010 - Started ARVs</strong>
+                                    <p>One year after diagnosis, started on antiretroviral therapy. Initial regimen: <strong>D4T (Stavudine), 3TC (Lamivudine), Nevirapine.</strong> Also on TB preventive therapy (Cotrimoxazole) for one year. Later switched to final regimen: <strong>TDF, 3TC, DTG.</strong> Took daily medication for 13 years. At one point, viral load measured 50 copies.</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">💊 13 Years on ARVs</span>
+                                        <span class="evidence-tag">📋 Treatment History</span>
+                                        <span class="evidence-tag">🔬 Viral Load: 50 Copies</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">⛪</span>
+                                <div class="timeline-content">
+                                    <strong>December 2021 - Healed at Nakuru Meeting</strong>
+                                    <p>At age 15, Alfredo attended the meeting of the mightiest prophet of the LORD in Nakuru. The prophet prayed: <strong>"I am now commanding the blood of Jesus to flow all over this meeting, restoring people, dissolving HIV. I cast HIV AIDS today in the mighty name of Jesus!"</strong> Alfredo was healed that day.</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">🎤 Prophet's Prayer</span>
+                                        <span class="evidence-tag">✨ Healing Crusade</span>
+                                        <span class="evidence-tag">📍 Nakuru, Kenya</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">🔬</span>
+                                <div class="timeline-content">
+                                    <strong>April 2, 2022 - First Negative Test</strong>
+                                    <p>Alfredo returned to his own doctors at Seia County Hospital and requested HIV retest. <strong>VIRAL LOAD: 0 COPIES.</strong> No HIV virus detected in blood! Medical staff shocked. This was the first confirmatory test after the prophet's prayer.</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ Viral Load: 0 Copies</span>
+                                        <span class="evidence-tag">🏥 Same Hospital</span>
+                                        <span class="evidence-tag">👨‍⚕️ Original Doctors</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">🔬</span>
+                                <div class="timeline-content">
+                                    <strong>August 25, 2022 - Second Negative Test (OFF ARVs!)</strong>
+                                    <p>Follow-up viral load test conducted 4 months later. Result: <strong>0 COPIES - HIV NEGATIVE!</strong> Critical detail: <strong>Alfredo was NOT using any ARVs at this time.</strong> The virus was completely gone from his bloodstream without medication. Clinical Nurse Jonathan Kevin (13 years experience, 10 years in HIV program) confirmed: "Remember that time you were not using any ARVs."</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ Viral Load: 0 Copies</span>
+                                        <span class="evidence-tag">🚫 OFF All Medication</span>
+                                        <span class="evidence-tag">📋 Follow-up Test</span>
+                                        <span class="evidence-tag">👨‍⚕️ Nurse Confirmation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-icon">📋</span>
+                                <div class="timeline-content">
+                                    <strong>September 22, 2022 - DISCONTINUED FROM HIV CARE</strong>
+                                    <p>After two consecutive viral load tests showing 0 copies while OFF medication, Seia County Hospital officially <strong>DISCONTINUED Alfredo from antiretroviral therapy and HIV care.</strong> Clinical Nurse Jonathan Kevin: "We discontinued you from antiretroviral therapy and generally from HIV care. You can see for yourself we stopped you from treatment. You were discontinued from HIV treatment."</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ Officially Discontinued</span>
+                                        <span class="evidence-tag">🏥 Hospital Decision</span>
+                                        <span class="evidence-tag">📄 Treatment Summary</span>
+                                        <span class="evidence-tag">🚫 No More ARVs</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item highlight">
+                                <span class="timeline-icon">📹</span>
+                                <div class="timeline-content">
+                                    <strong>February 21, 2026 - PUBLIC DOCUMENTATION</strong>
+                                    <p><strong>MEDICAL RECORDS RELEASED ON CAMERA:</strong> Alfredo returned to Seia County Referral Hospital and gave written consent for his treatment records to be shared publicly. Clinical Nurse Jonathan Kevin reviewed his complete file on camera, confirming: Patient Unique Number 14080-10378, enrolled August 17, 2009, CD4 as low as 35 cells, viral loads 0 copies on April 2 & August 25, 2022 (OFF ARVs), discontinued from HIV care September 22, 2022. <strong>RE-TESTED LIVE ON CAMERA: HIV NEGATIVE using Screen rapid test (99.8% sensitive).</strong> Nurse: "This is a miracle."</p>
+                                    <div class="evidence-tags">
+                                        <span class="evidence-tag">✅ Live HIV Test: NEGATIVE</span>
+                                        <span class="evidence-tag">📹 Video Documentation</span>
+                                        <span class="evidence-tag">📄 Treatment Summary Released</span>
+                                        <span class="evidence-tag">👨‍⚕️ Clinical Nurse 13 Yrs Experience</span>
+                                        <span class="evidence-tag">✍️ Patient Consent Form</span>
+                                        <span class="evidence-tag">🔬 Screen Test 99.8% Sensitive</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimony-quote">
+                            <p>"My name is Alfredo Mondi. I was tested and confirmed to be HIV positive in 2009 at age 2 at Seia County Referral Hospital and put on HIV antiretroviral treatment. In December 2021, I attended the meeting of the prophet of the Lord at Nakuru where the prophet cast HIV virus. I went back to my own doctors and requested for a retest. It was a shock when my own doctors retested me and found that my HIV status changed to HIV negative. They did all required follow-up tests and discharged me on 22nd September 2022. Today I am alive and strong. Thank you the mightiest prophet of the Lord for healing me and removing me from the grave!"</p>
+                            <span class="quote-author">- Alfredo Mondi, Seia County</span>
+                            <p style="margin-top: 1rem; font-style: italic; color: #ffd700;">"I thank the Lord so much. I thank the prophet so much... That is how Alfred got healing from Nakuru. Until now he hasn't taken any drugs and now even those virus are not there in his blood. He is HIV negative." - Alfredo's Grandmother</p>
+                            <p style="margin-top: 1rem; font-style: italic; color: var(--accent-gold);">Now attending Trangala Boys High School, Form 3, preparing for KCSE 2027 exams. Healthy and strong.</p>
+                        </div>
+
+                        <div class="testimony-footer">
+                            <button class="view-evidence-btn">📂 View All Evidence</button>
+                            <button class="share-testimony-btn">📤 Share Testimony</button>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Submit Your Testimony Section -->
+                <div class="submit-testimony-section">
+                    <h2>📝 Share Your HIV/AIDS Healing Testimony</h2>
+                    <p>Have you been healed of HIV/AIDS through the ministry of Jesus is LORD Radio? We want to document and share your testimony to glorify God and bring hope to others!</p>
+                    <div class="submit-requirements">
+                        <h3>Required Documentation:</h3>
+                        <ul>
+                            <li>✓ Initial HIV POSITIVE test results from hospital/clinic</li>
+                            <li>✓ Recent HIV NEGATIVE test results from same or different facility</li>
+                            <li>✓ Hospital medical records (HMIS documentation)</li>
+                            <li>✓ Doctor's statement or confirmation letter</li>
+                            <li>✓ Written consent to release medical information publicly</li>
+                            <li>✓ Timeline of when you heard the prophet pray on Jesus is LORD Radio</li>
+                            <li>✓ Contact information for verification</li>
+                        </ul>
+                    </div>
+                    <button class="submit-testimony-btn">Submit Your HIV/AIDS Healing Testimony</button>
+                    <p class="submit-note">All submissions undergo medical verification at the hospital level before publication</p>
+                </div>
+
+                <!-- Verification Notice -->
+                <div class="verification-notice">
+                    <h3>🔍 Our HIV/AIDS Healing Verification Process</h3>
+                    <p>Every HIV/AIDS healing testimony published undergoes the most rigorous medical verification:</p>
+                    <ol>
+                        <li><strong>Hospital Record Verification:</strong> We obtain official medical records showing initial HIV POSITIVE diagnosis with date, facility name, and medical staff signatures</li>
+                        <li><strong>Confirmatory Test Documentation:</strong> Multiple HIV NEGATIVE test results are required, including advanced analyzer tests when available</li>
+                        <li><strong>Medical Superintendent Confirmation:</strong> Hospital administrators and doctors provide official statements confirming the healing</li>
+                        <li><strong>HMIS System Documentation:</strong> We verify patient records in the official Hospital Management Information System (HMIS)</li>
+                        <li><strong>Patient Consent:</strong> Written consent is obtained from each individual to publicly share their medical information</li>
+                        <li><strong>Video Documentation:</strong> On-camera interviews with patients and medical professionals at the hospital facilities</li>
+                        <li><strong>Timeline Verification:</strong> We document when the patient heard Jesus is LORD Radio broadcast and the prophet's prayer</li>
+                    </ol>
+                    <p class="verification-commitment"><strong>These are not stories. These are documented medical cases from real hospitals with real doctors confirming what science says is impossible: HIV/AIDS has been healed through the power of Jesus Christ and the prayers of the mightiest prophet of the LORD.</strong></p>
+                    
+                    <div class="scripture-box" style="margin-top: 2rem;">
+                        <h3>Luke 1:37</h3>
+                        <p class="scripture">"For nothing will be impossible with God."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jesus is LORD Radio. All Rights Reserved.</p>
+            <p>Broadcasting from Nakuru, Kenya | 105.3FM & 105.9FM</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,789 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Library of Teachings - Jesus is LORD Radio">
-    <title>Library Of Teachings - Jesus Is LORD Radio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        .teaching-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 35px;
-            margin-top: 30px;
-        }
-        .teaching-card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .teaching-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-        .teaching-video {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-        .teaching-video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .teaching-content {
-            padding: 25px;
-        }
-        .teaching-title {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: #1a3a6b;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-        .teaching-date {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 8px;
-        }
-        .teaching-category {
-            display: inline-block;
-            background: linear-gradient(135deg, #ffd700, #ffeb3b);
-            color: #1a3a6b;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-        .category-section {
-            margin-bottom: 60px;
-        }
-        .category-title {
-            font-size: 2rem;
-            color: #ffd700;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #ffd700;
-        }
-        .category-description {
-            font-size: 1.1rem;
-            color: #e0e0e0;
-            margin-bottom: 30px;
-        }
-        .channel-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #ff0000, #cc0000);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin: 30px 0;
-            transition: all 0.3s ease;
-        }
-        .channel-link:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(255,0,0,0.3);
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Library of Teachings — Jesus is LORD Radio. Biblical Messages, Healing Crusades, and Global Conferences."/>
+<title>Library of Messages — Jesus Is LORD Radio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-container":"#272929","inverse-surface":"#2f3131","secondary-container":"#fed65b","error-container":"#ffdad6","outline":"#757682","on-secondary-container":"#745c00","secondary-fixed":"#ffe088","on-surface-variant":"#444650","surface-container-highest":"#e2e2e2","secondary-fixed-dim":"#e9c349","on-background":"#1a1c1c","on-error-container":"#93000a","surface-bright":"#f9f9f9","inverse-on-surface":"#f1f1f1","surface-container":"#eeeeee","surface-variant":"#e2e2e2","on-primary":"#ffffff","on-tertiary-container":"#8f9090","on-tertiary-fixed":"#1a1c1c","tertiary-fixed":"#e2e2e2","tertiary":"#121515","on-primary-fixed":"#00174a","primary-fixed-dim":"#b3c5ff","inverse-primary":"#b3c5ff","primary-container":"#002366","outline-variant":"#c5c6d2","on-error":"#ffffff","on-secondary-fixed-variant":"#574500","on-primary-container":"#758dd5","surface-container-lowest":"#ffffff","surface-dim":"#dadada","on-surface":"#1a1c1c","on-tertiary":"#ffffff","surface-container-high":"#e8e8e8","surface":"#f9f9f9","surface-tint":"#435b9f","on-primary-fixed-variant":"#2a4386","on-tertiary-fixed-variant":"#454747","error":"#ba1a1a","primary":"#00113a","on-secondary":"#ffffff","secondary":"#735c00","on-secondary-fixed":"#241a00","background":"#f9f9f9","tertiary-fixed-dim":"#c6c6c7","surface-container-low":"#f3f3f3"},"borderRadius":{"DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px"},"fontFamily":{"headline":["Newsreader","serif"],"body":["Newsreader","serif"],"label":["Inter","sans-serif"]}}}}
+</script>
+<style>
+.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f9f9f9}::-webkit-scrollbar-thumb{background:#00113a}
+.article-card{transition:all 0.2s}
+.article-card.hidden{display:none}
+</style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="https://static.wixstatic.com/media/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png/v1/fill/w_114,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png" alt="Jesus is LORD Radio Logo" class="logo-image">
-                    <div class="logo">
-                        <span class="logo-text">Jesus is LORD</span>
-                        <span class="logo-subtitle">Radio</span>
-                    </div>
-                </div>
-                <nav class="nav">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">Jesusislordradio.org</a>
-                    <a href="library.html" class="nav-link active">Library Of Messages</a>
-                    <a href="prophecies.html" class="nav-link">Prophecies</a>
-                    <a href="testimonies.html" class="nav-link">Healing Testimonies</a>
-                    <a href="social-media.html" class="nav-link">Connect With Us</a>
-                </nav>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md flex justify-between items-center px-6 md:px-12 h-20 shadow-[0_4px_32px_rgba(0,17,58,0.04)]">
+  <a href="index.html" class="flex items-center gap-3" style="text-decoration:none">
+    <img src="https://static.wixstatic.com/media/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png/v1/fill/w_56,h_52,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png" alt="Jesus is LORD Radio Logo" class="h-12 w-auto">
+    <span class="text-lg font-serif font-black text-primary tracking-tighter uppercase hidden md:block">Jesus is LORD Radio</span>
+  </a>
+  <div class="hidden md:flex items-center h-full space-x-6 font-label text-xs tracking-widest uppercase">
+    <a class="text-primary opacity-80 h-full flex items-center px-2 font-medium hover:text-secondary transition-colors" href="library.html">Library</a>
+    <a class="text-primary opacity-80 h-full flex items-center px-2 font-medium hover:text-secondary transition-colors" href="prophecies.html">Prophecies</a>
+    <a class="text-primary opacity-80 h-full flex items-center px-2 font-medium hover:text-secondary transition-colors" href="testimonies.html">Healing Testimonies</a>
+    <a class="text-primary opacity-80 h-full flex items-center px-2 font-medium hover:text-secondary transition-colors" href="social-media.html">Connect</a>
+  </div>
+  <div class="flex items-center gap-4">
+    <a href="about.html" class="material-symbols-outlined text-xl cursor-pointer hover:text-secondary text-primary" style="text-decoration:none">language</a>
+    <a href="index.html" class="material-symbols-outlined text-xl cursor-pointer hover:text-secondary text-primary" style="text-decoration:none">home</a>
+  </div>
+</nav>
+
+<main class="pt-20">
+
+<!-- Hero Section: Sacred Gatherings -->
+<section class="relative h-[716px] w-full flex items-center justify-center overflow-hidden">
+  <img class="absolute inset-0 w-full h-full object-cover brightness-[0.4] grayscale-[0.3]"
+    alt="Crusade gathering — thousands in worship"
+    src="https://static.wixstatic.com/media/a5f063_b44cf2e8e6a843e08ccef14264831acf~mv2.jpeg/v1/fill/w_1920,h_1080,al_c,q_85,enc_avif,quality_auto/a5f063_b44cf2e8e6a843e08ccef14264831acf~mv2.jpeg"/>
+  <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+  <div class="relative z-10 text-center px-4 max-w-5xl">
+    <div class="flex justify-center mb-6">
+      <span class="material-symbols-outlined text-secondary-fixed-dim text-6xl" style="font-variation-settings:'FILL' 1">library_books</span>
+    </div>
+    <h1 class="font-headline text-6xl md:text-8xl text-on-primary font-extrabold tracking-tight mb-4">
+      Sacred Gatherings
+    </h1>
+    <p class="font-headline italic text-2xl text-secondary-fixed-dim max-w-2xl mx-auto">
+      "Repent, for the Kingdom of Heaven is at hand. Prepare the way of the Lord."
+    </p>
+  </div>
+  <div class="absolute top-10 right-10 opacity-30 select-none pointer-events-none">
+    <span class="material-symbols-outlined text-[120px] text-secondary-fixed-dim" style="font-variation-settings:'FILL' 0">raven</span>
+  </div>
+</section>
+
+<!-- Filter System -->
+<section class="bg-surface-container py-6 sticky top-[80px] z-40 border-b border-outline-variant/10">
+  <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+    <span class="font-label text-xs uppercase tracking-widest text-outline">Refine Records</span>
+    <div class="flex flex-wrap gap-2 md:gap-4">
+      <button onclick="filterCards('all')" id="btn-all" class="filter-btn font-label text-sm font-bold bg-primary text-on-primary px-6 py-2 transition-all hover:bg-primary-container">All Decrees</button>
+      <button onclick="filterCards('discipleship')" id="btn-discipleship" class="filter-btn font-label text-sm font-medium text-on-surface hover:bg-surface-container-high px-6 py-2 transition-all">Discipleship</button>
+      <button onclick="filterCards('global')" id="btn-global" class="filter-btn font-label text-sm font-medium text-on-surface hover:bg-surface-container-high px-6 py-2 transition-all">Global Conferences</button>
+      <button onclick="filterCards('healing')" id="btn-healing" class="filter-btn font-label text-sm font-medium text-on-surface hover:bg-surface-container-high px-6 py-2 transition-all">Healing Crusades</button>
+    </div>
+    <span class="hidden lg:block text-outline-variant italic text-sm font-body">Chronological archives of the end-time mission.</span>
+  </div>
+</section>
+
+<!-- Content Grid -->
+<section class="max-w-7xl mx-auto px-6 md:px-8 py-20">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+
+    <!-- Main Events Timeline (8 Cols) -->
+    <div class="md:col-span-8 space-y-12" id="cardsContainer">
+
+      <!-- Article 1: Global Conference Feb 2026 -->
+      <article class="article-card" data-category="global">
+        <a href="https://www.youtube.com/live/DvhMBND1trc?si=-ArH565G0EspsumX" target="_blank" style="text-decoration:none;color:inherit">
+          <div class="group grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 hover:border-secondary transition-colors overflow-hidden">
+            <div class="md:col-span-1 overflow-hidden relative h-56 md:h-auto">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="https://img.youtube.com/vi/DvhMBND1trc/maxresdefault.jpg"
+                alt="Global Conference on the Glorious Coming of the Messiah"/>
+              <div class="absolute top-4 left-4">
+                <span class="bg-error text-white px-3 py-1 font-label text-[10px] uppercase tracking-widest">Global Conference</span>
+              </div>
             </div>
+            <div class="md:col-span-2 p-8 flex flex-col justify-between bg-surface-container-lowest group-hover:bg-surface-container transition-colors">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <span class="font-label text-[10px] uppercase tracking-widest text-outline">February 28, 2026</span>
+                  <span class="w-1 h-1 bg-outline rounded-full"></span>
+                  <span class="font-label text-[10px] uppercase tracking-widest text-outline">Nations of the World</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
+                  Global Conference on the Glorious Coming of the Messiah
+                </h2>
+                <p class="font-body text-on-surface-variant leading-relaxed">
+                  Prophet Dr. David Owuor addresses the global church on the imminent return of Jesus Christ. A historic proclamation broadcast to all nations of the earth.
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-6 pt-6 border-t border-outline-variant/15">
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">Watch Recording</span>
+                <span class="material-symbols-outlined text-xl text-primary group-hover:text-secondary transition-colors group-hover:translate-x-1">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 2: Kawasaki Japan Jan 2026 -->
+      <article class="article-card" data-category="healing">
+        <a href="https://www.youtube.com/watch?v=KLAGe3j7CVo" target="_blank" style="text-decoration:none;color:inherit">
+          <div class="group grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 hover:border-secondary transition-colors overflow-hidden">
+            <div class="md:col-span-1 overflow-hidden relative h-56 md:h-auto">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="https://img.youtube.com/vi/KLAGe3j7CVo/maxresdefault.jpg"
+                alt="Super Glorious Healing Service in Kawasaki, Japan"/>
+              <div class="absolute top-4 left-4">
+                <span class="bg-primary text-white px-3 py-1 font-label text-[10px] uppercase tracking-widest">Healing Service</span>
+              </div>
+            </div>
+            <div class="md:col-span-2 p-8 flex flex-col justify-between bg-surface-container-lowest group-hover:bg-surface-container transition-colors">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <span class="font-label text-[10px] uppercase tracking-widest text-outline">January 25, 2026</span>
+                  <span class="w-1 h-1 bg-outline rounded-full"></span>
+                  <span class="font-label text-[10px] uppercase tracking-widest text-outline">Kawasaki, Japan</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
+                  Super Glorious Healing Service in Kawasaki, Japan
+                </h2>
+                <p class="font-body text-on-surface-variant leading-relaxed">
+                  Mighty healings break out as the power of the Holy Spirit moves through the Asian nation. The sick and the afflicted receive their healing by the power of God.
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-6 pt-6 border-t border-outline-variant/15">
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">Watch Recording</span>
+                <span class="material-symbols-outlined text-xl text-primary group-hover:text-secondary transition-colors group-hover:translate-x-1">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 3: Menengai-8 Dec 2025 -->
+      <article class="article-card" data-category="healing">
+        <a href="https://youtu.be/mCLyl5CULw0" target="_blank" style="text-decoration:none;color:inherit">
+          <div class="group grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 hover:border-secondary transition-colors overflow-hidden">
+            <div class="md:col-span-1 overflow-hidden relative h-56 md:h-auto">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="https://img.youtube.com/vi/mCLyl5CULw0/maxresdefault.jpg"
+                alt="Grand Mega Historic Healing Service Nakuru Menengai-8"/>
+              <div class="absolute top-4 left-4">
+                <span class="bg-secondary text-on-secondary px-3 py-1 font-label text-[10px] uppercase tracking-widest">Revival Meeting</span>
+              </div>
+            </div>
+            <div class="md:col-span-2 p-8 flex flex-col justify-between bg-surface-container-lowest group-hover:bg-surface-container transition-colors">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <span class="font-label text-[10px] uppercase tracking-widest text-outline">December 30, 2025</span>
+                  <span class="w-1 h-1 bg-outline rounded-full"></span>
+                  <span class="font-label text-[10px] uppercase tracking-widest text-outline">Nakuru, Kenya</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
+                  Grand Mega Historic Healing Service — Nakuru Menengai-8
+                </h2>
+                <p class="font-body text-on-surface-variant leading-relaxed">
+                  A grand revival meeting at the Menengai Crater. Thousands gather as heaven opens over the city of Nakuru, Kenya. The power of the Holy Spirit moves mightily.
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-6 pt-6 border-t border-outline-variant/15">
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">Watch Recording</span>
+                <span class="material-symbols-outlined text-xl text-primary group-hover:text-secondary transition-colors group-hover:translate-x-1">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 4: Conference of Pastors & Ministers -->
+      <article class="article-card" data-category="discipleship">
+        <div class="group grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 hover:border-secondary transition-colors overflow-hidden">
+          <div class="md:col-span-1 overflow-hidden relative h-56 md:h-auto">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://live-tag.creatopy.net/designs/0r3qgl0/embed/standard/media/793c23459231818d0081239ecbbd4a16.jpg"
+              alt="International Conference of Pastors and Ministers"/>
+            <div class="absolute top-4 left-4">
+              <span class="bg-primary text-white px-3 py-1 font-label text-[10px] uppercase tracking-widest">Discipleship</span>
+            </div>
+          </div>
+          <div class="md:col-span-2 p-8 flex flex-col justify-between bg-surface-container-lowest group-hover:bg-surface-container transition-colors">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">March 18, 2024</span>
+                <span class="w-1 h-1 bg-outline rounded-full"></span>
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">Nakuru, Kenya</span>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
+                Mega International Conference of Pastors & Ministers
+              </h2>
+              <p class="font-body text-on-surface-variant leading-relaxed">
+                A solemn gathering of pastors and ministers from across the world, called to receive impartation, correction, and the prophetic word of the LORD for the end-time church.
+              </p>
+            </div>
+            <div class="flex items-center justify-between mt-6 pt-6 border-t border-outline-variant/15">
+              <span class="font-label text-[10px] uppercase tracking-widest text-outline">View Teaching</span>
+              <span class="material-symbols-outlined text-xl text-primary group-hover:text-secondary transition-colors group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
         </div>
-    </header>
+      </article>
 
-    <!-- Hero Section -->
-    <section class="hero hero-small">
-        <div class="container">
-            <h1 class="hero-title">Library Of Teachings</h1>
-            <p class="hero-subtitle">Biblical Teachings & Messages from Prophet Dr. David Owuor</p>
-            <a href="https://www.youtube.com/@repentpreparetheway" target="_blank" class="channel-link">📺 Visit Full YouTube Channel</a>
+      <!-- Article 5: Grand Reception Paris Europe -->
+      <article class="article-card" data-category="global">
+        <div class="group grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 hover:border-secondary transition-colors overflow-hidden">
+          <div class="md:col-span-1 overflow-hidden relative h-56 md:h-auto">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://live-tag.creatopy.net/designs/0r3qgl0/embed/standard/media/3d339530a0db6814f03c6b9fabf63510.jpg"
+              alt="Grand Reception in Paris, France — European Outreach"/>
+            <div class="absolute top-4 left-4">
+              <span class="bg-error text-white px-3 py-1 font-label text-[10px] uppercase tracking-widest">Global Conferences</span>
+            </div>
+          </div>
+          <div class="md:col-span-2 p-8 flex flex-col justify-between bg-surface-container-lowest group-hover:bg-surface-container transition-colors">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">December 2025</span>
+                <span class="w-1 h-1 bg-outline rounded-full"></span>
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">Paris, France</span>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
+                Grand Reception in Paris, France — European Outreach
+              </h2>
+              <p class="font-body text-on-surface-variant leading-relaxed">
+                The prophetic ministry reaches the heart of Europe. A powerful gathering in Paris, France, as the message of repentance and the coming of the Messiah sounds across the continent.
+              </p>
+            </div>
+            <div class="flex items-center justify-between mt-6 pt-6 border-t border-outline-variant/15">
+              <span class="font-label text-[10px] uppercase tracking-widest text-outline">View Recording</span>
+              <span class="material-symbols-outlined text-xl text-primary group-hover:text-secondary transition-colors group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Messages Section -->
-    <section class="updates">
-        <div class="container">
-            
-            <!-- CONFERENCE OF PASTORS & MINISTERS -->
-            <div class="category-section">
-                <h2 class="category-title">Conference of Pastors & Ministers</h2>
-                <p class="category-description">Special messages delivered to pastors and ministers of the Gospel</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Mega International Conference of Pastors & Ministers of The Gospel</h3>
-                            <p class="teaching-date">March 18, 2024</p>
-                            <span class="teaching-category">Conference</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Restoration of The Pulpit</h3>
-                            <p class="teaching-date">Menengai-8 Teaching</p>
-                            <span class="teaching-category">Conference</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Judgment of God Coming to Clean Up The Church Globally</h3>
-                            <p class="teaching-date">February 21, 2024</p>
-                            <span class="teaching-category">Conference</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Prophecy on The Tremendous Judgement of God Coming to The Church</h3>
-                            <p class="teaching-date">February 22, 2024</p>
-                            <span class="teaching-category">Conference</span>
-                        </div>
-                    </div>
-                </div>
+      <!-- Article 6: Pacific Reception Fiji -->
+      <article class="article-card" data-category="global">
+        <div class="group grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 hover:border-secondary transition-colors overflow-hidden">
+          <div class="md:col-span-1 overflow-hidden relative h-56 md:h-auto">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://live-tag.creatopy.net/designs/50k866k/embed/standard/media/425a66bd04c4975ee7ff8622f1d8e7e6.jpg"
+              alt="Grand Reception in Nadi and Suva, Fiji — Pacific Outreach"/>
+            <div class="absolute top-4 left-4">
+              <span class="bg-error text-white px-3 py-1 font-label text-[10px] uppercase tracking-widest">Global Conferences</span>
             </div>
-
-            <!-- GLOBAL TEACHINGS - EUROPE -->
-            <div class="category-section">
-                <h2 class="category-title">Global Teachings - Europe</h2>
-                <p class="category-description">Messages delivered across European nations</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception in Paris, France</h3>
-                            <p class="teaching-date">December 2025</p>
-                            <span class="teaching-category">France</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Arrival in Stuttgart, Germany</h3>
-                            <p class="teaching-date">September 2025</p>
-                            <span class="teaching-category">Germany</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception in Brussels, Belgium</h3>
-                            <p class="teaching-date">September 2025</p>
-                            <span class="teaching-category">Belgium</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception in The Netherlands</h3>
-                            <p class="teaching-date">August 2025</p>
-                            <span class="teaching-category">Netherlands</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Arrival in Geneva, Switzerland</h3>
-                            <p class="teaching-date">April 2025</p>
-                            <span class="teaching-category">Switzerland</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Portugal Grand Arrival and Reception</h3>
-                            <p class="teaching-date">April 2025</p>
-                            <span class="teaching-category">Portugal</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception in Barcelona, Spain</h3>
-                            <p class="teaching-date">May 2025</p>
-                            <span class="teaching-category">Spain</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception in Milan, Italy</h3>
-                            <p class="teaching-date">May 2025</p>
-                            <span class="teaching-category">Italy</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Berlin Brandenburg Airport Reception, Germany</h3>
-                            <p class="teaching-date">February 2025</p>
-                            <span class="teaching-category">Germany</span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="md:col-span-2 p-8 flex flex-col justify-between bg-surface-container-lowest group-hover:bg-surface-container transition-colors">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">June 2025</span>
+                <span class="w-1 h-1 bg-outline rounded-full"></span>
+                <span class="font-label text-[10px] uppercase tracking-widest text-outline">Nadi & Suva, Fiji</span>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
+                Grand Reception in Nadi & Suva, Fiji — Pacific Outreach
+              </h2>
+              <p class="font-body text-on-surface-variant leading-relaxed">
+                Heaven touches the Pacific islands as the prophetic message reaches Fiji. Multitudes gather in Nadi and Suva to receive the word of God.
+              </p>
             </div>
-
-            <!-- GLOBAL TEACHINGS - PACIFIC & ASIA -->
-            <div class="category-section">
-                <h2 class="category-title">Global Teachings - Pacific & Asia</h2>
-                <p class="category-description">Messages to the Pacific Islands and Asian nations</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception in Nadi & Suva, Fiji</h3>
-                            <p class="teaching-date">June 2025</p>
-                            <span class="teaching-category">Fiji</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Glorious Coming of The Messiah - Ahmednagar, India</h3>
-                            <p class="teaching-date">February 2024</p>
-                            <span class="teaching-category">India</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Rapture of The Church - The Glorious Coming of The Messiah - Mumbai, India</h3>
-                            <p class="teaching-date">February 2024</p>
-                            <span class="teaching-category">India</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Mightiest Prophet Commands Heaven to Open in Ahmednagar, India</h3>
-                            <p class="teaching-date">February 2024</p>
-                            <span class="teaching-category">India</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex items-center justify-between mt-6 pt-6 border-t border-outline-variant/15">
+              <span class="font-label text-[10px] uppercase tracking-widest text-outline">View Recording</span>
+              <span class="material-symbols-outlined text-xl text-primary group-hover:text-secondary transition-colors group-hover:translate-x-1">arrow_forward</span>
             </div>
-
-            <!-- GLOBAL TEACHINGS - AFRICA -->
-            <div class="category-section">
-                <h2 class="category-title">Global Teachings - Africa</h2>
-                <p class="category-description">Messages across the African continent</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Reception of The Mightiest Prophets - Kenya</h3>
-                            <p class="teaching-date">February 14, 2024</p>
-                            <span class="teaching-category">Kenya</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Mightiest Prophet Honoured in Mozambique by H.E. President Daniel Chapo</h3>
-                            <p class="teaching-date">October 2025</p>
-                            <span class="teaching-category">Mozambique</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Super Massive Glorious Revival Meeting - Ivory Coast</h3>
-                            <p class="teaching-date">March 2025</p>
-                            <span class="teaching-category">Ivory Coast</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GLOBAL TEACHINGS - LATIN AMERICA -->
-            <div class="category-section">
-                <h2 class="category-title">Global Teachings - Latin America</h2>
-                <p class="category-description">Messages to Latin American nations</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Prophet Dr. Owuor Honoured in Venezuela by H.E President Nicolas Maduro</h3>
-                            <p class="teaching-date">April 5, 2024</p>
-                            <span class="teaching-category">Venezuela</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Elijah Opens Heaven Over Belem, Brazil</h3>
-                            <p class="teaching-date">September 2023</p>
-                            <span class="teaching-category">Brazil</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CORE TEACHINGS - HOLINESS & RIGHTEOUSNESS -->
-            <div class="category-section">
-                <h2 class="category-title">Core Teachings - Holiness & Righteousness</h2>
-                <p class="category-description">Essential teachings on holy living and righteousness</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Garment of Righteousness The Church Ought to Be Wearing Now</h3>
-                            <p class="teaching-date">Revelation 19:6-9</p>
-                            <span class="teaching-category">Holiness</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Garment And The Abuse of Grace</h3>
-                            <p class="teaching-date">Central Park | May 19, 2019</p>
-                            <span class="teaching-category">Holiness</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The LORD Severely Warns Against Sexual Sin & Homosexuality</h3>
-                            <p class="teaching-date">April 19, 2021</p>
-                            <span class="teaching-category">Holiness</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Identifying The True Church of Christ</h3>
-                            <p class="teaching-date">May 5, 2021</p>
-                            <span class="teaching-category">Church</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CORE TEACHINGS - THE SECOND COMING -->
-            <div class="category-section">
-                <h2 class="category-title">Core Teachings - The Second Coming</h2>
-                <p class="category-description">Teachings on the return of the Messiah and the Rapture</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">This Is The Hour For The Church to Eagerly Wait For The Glorious Coming Messiah</h3>
-                            <p class="teaching-date">Menengai-7</p>
-                            <span class="teaching-category">Second Coming</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Promise of Glorification to The Holy Church at Rapture</h3>
-                            <p class="teaching-date">Menengai-7</p>
-                            <span class="teaching-category">Rapture</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Glorious Coming of The Kingdom of God</h3>
-                            <p class="teaching-date">January 2025</p>
-                            <span class="teaching-category">Second Coming</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Our Citizenship Is Not of This Earth</h3>
-                            <p class="teaching-date">Philippians 3:20-21</p>
-                            <span class="teaching-category">Second Coming</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Resurrection of The Saints</h3>
-                            <p class="teaching-date">Daniel 12:13 | April 3, 2022</p>
-                            <span class="teaching-category">Resurrection</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Power of Christ in Drawing The Church to The Kingdom of God</h3>
-                            <p class="teaching-date">May 2021</p>
-                            <span class="teaching-category">Church</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CORE TEACHINGS - JUDGEMENT & URGENCY -->
-            <div class="category-section">
-                <h2 class="category-title">Core Teachings - Judgement & Urgency</h2>
-                <p class="category-description">Urgent warnings about God's judgement and the end times</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Stern Warning That The Long-Suffering of God Comes to An End</h3>
-                            <p class="teaching-date">Menengai-7</p>
-                            <span class="teaching-category">Urgency</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Judgment of God Coming to The Unbelievers of This Generation</h3>
-                            <p class="teaching-date">May 12, 2021</p>
-                            <span class="teaching-category">Judgement</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Storm Coming to The Earth</h3>
-                            <p class="teaching-date">Central Park | March 24, 2019</p>
-                            <span class="teaching-category">Urgency</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Separation From The Storm</h3>
-                            <p class="teaching-date">Central Park | March 24, 2019</p>
-                            <span class="teaching-category">Urgency</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Urgency, Part 2 - Daniel 2</h3>
-                            <p class="teaching-date">Central Park | May 19, 2019</p>
-                            <span class="teaching-category">Urgency</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">The Kingdom That Lasts Forever</h3>
-                            <p class="teaching-date">Central Park | May 19, 2019</p>
-                            <span class="teaching-category">Teaching</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SPECIAL CONFERENCES & REVIVAL MEETINGS -->
-            <div class="category-section">
-                <h2 class="category-title">Special Conferences & Revival Meetings</h2>
-                <p class="category-description">Historic revival meetings and conferences</p>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Mega Super Historic Healing Service in Nakuru, Menengai-8</h3>
-                            <p class="teaching-date">December 30, 2025</p>
-                            <span class="teaching-category">Revival</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Massive Healings Break Out at Nakuru Menengai-7</h3>
-                            <p class="teaching-date">Grand Mega Revival Meeting</p>
-                            <span class="teaching-category">Revival</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Super Glorious Ahmednagar Healing Service, India</h3>
-                            <p class="teaching-date">February 2024</p>
-                            <span class="teaching-category">Revival</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Utawala Word Expo, Day 1</h3>
-                            <p class="teaching-date">November 23, 2019</p>
-                            <span class="teaching-category">Conference</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Utawala Word Expo, Day 2</h3>
-                            <p class="teaching-date">November 24, 2019</p>
-                            <span class="teaching-category">Conference</span>
-                        </div>
-                    </div>
-
-                    <div class="teaching-card">
-                        <div class="teaching-video">
-                            <iframe src="https://www.youtube.com/embed/videoseries?list=UU@repentpreparetheway" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="teaching-content">
-                            <h3 class="teaching-title">Grand Mega Tuesday Global Service</h3>
-                            <p class="teaching-date">Revelation 3:10 | May 2, 2023</p>
-                            <span class="teaching-category">Revival</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CALL TO ACTION -->
-            <div style="text-align: center; margin:50px 0; padding: 40px; background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 15px;">
-                <h2 style="color: #ffd700; font-size: 2rem; margin-bottom: 20px;">Watch All Teachings</h2>
-                <p style="color: white; font-size: 1.2rem; margin-bottom: 30px;">Subscribe to the official YouTube channel for complete biblical teachings and messages</p>
-                <a href="https://www.youtube.com/@repentpreparetheway" target="_blank" class="channel-link">🔔 Subscribe on YouTube</a>
-            </div>
-
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Jesus is LORD Radio. All rights reserved.</p>
+    </div><!-- end main col -->
+
+    <!-- Sidebar (4 Cols) -->
+    <aside class="md:col-span-4 space-y-10">
+
+      <!-- Live Stream CTA -->
+      <div class="bg-primary text-white p-8">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">radio</span>
+        <h3 class="text-2xl font-headline font-bold mb-3">Jesus Is LORD Radio</h3>
+        <p class="font-body text-on-primary-container text-sm mb-6 italic leading-relaxed">Broadcasting live 24/7 from Nakuru, Kenya — 105.3FM & 105.9FM</p>
+        <audio controls preload="none" class="w-full mb-4" style="filter:invert(1) hue-rotate(180deg)">
+          <source src="https://jesus-is-lord-radio.radioca.st/stream" type="audio/mpeg">
+        </audio>
+        <p class="font-label text-[10px] uppercase tracking-widest text-on-primary-container opacity-60">Online Stream · 24/7</p>
+      </div>
+
+      <!-- Sacred Evidence Panel -->
+      <div class="border border-outline-variant/20">
+        <div class="bg-surface-container px-6 py-4 border-b border-outline-variant/15">
+          <h4 class="font-label text-xs uppercase tracking-widest font-bold text-primary">Visible Signs & Wonders</h4>
         </div>
-    </footer>
-</body>
-</html>
-                <p>Access our complete collection of sermons, prophecies, and teachings. These messages are broadcast live and recorded for your spiritual edification.</p>
+        <div class="p-6 space-y-4">
+          <a href="testimonies.html" class="block group" style="text-decoration:none">
+            <div class="relative overflow-hidden h-32">
+              <img src="https://live-tag.creatopy.net/designs/50k866k/embed/standard/media/425a66bd04c4975ee7ff8622f1d8e7e6.jpg"
+                alt="The Cloud of God Descends — Kisumu, Kenya"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+              <div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                <span class="text-white font-label text-[10px] uppercase tracking-widest">Cloud of God · Kisumu</span>
+              </div>
             </div>
-
-            <div class="updates-grid">
-                <article class="update-card">
-                    <div class="card-label">DECEMBER 2025</div>
-                    <h3>The Coming of the Messiah</h3>
-                    <p class="card-description">A powerful message about the return of Christ and preparation for His coming.</p>
-                    <button class="play-button small">Listen Now</button>
-                </article>
-
-                <article class="update-card">
-                    <div class="card-label">NOVEMBER 2025</div>
-                    <h3>Repentance and Holiness</h3>
-                    <p class="card-description">The necessity of living a holy life in preparation for the LORD's return.</p>
-                    <button class="play-button small">Listen Now</button>
-                </article>
-
-                <article class="update-card">
-                    <div class="card-label">OCTOBER 2025</div>
-                    <h3>Faith and Miracles</h3>
-                    <p class="card-description">Testimonies of miracles and the power of faith in Jesus Christ.</p>
-                    <button class="play-button small">Listen Now</button>
-                </article>
-
-                <article class="update-card">
-                    <div class="card-label">SEPTEMBER 2025</div>
-                    <h3>The Blood of Jesus</h3>
-                    <p class="card-description">Understanding the power and significance of the blood of Christ.</p>
-                    <button class="play-button small">Listen Now</button>
-                </article>
-
-                <article class="update-card">
-                    <div class="card-label">AUGUST 2025</div>
-                    <h3>Prayer and Fasting</h3>
-                    <p class="card-description">The importance of prayer and fasting in the believer's life.</p>
-                    <button class="play-button small">Listen Now</button>
-                </article>
-
-                <article class="update-card">
-                    <div class="card-label">JULY 2025</div>
-                    <h3>The Rapture</h3>
-                    <p class="card-description">Biblical prophecy concerning the catching away of the church.</p>
-                    <button class="play-button small">Listen Now</button>
-                </article>
+          </a>
+          <a href="testimonies.html" class="block group" style="text-decoration:none">
+            <div class="relative overflow-hidden h-32">
+              <img src="https://pub-9f92551086574e82abebdc7b9c83cf92.r2.dev/Rain-Slide/Slide-4m.jpg"
+                alt="The Miraculous Rain — Kenya Drought Broken"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+              <div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                <span class="text-white font-label text-[10px] uppercase tracking-widest">Miraculous Rain · Kenya</span>
+              </div>
             </div>
-
-            <div class="archive-notice">
-                <h3>Complete Archive</h3>
-                <p>For the complete archive of messages dating back to 2013, please visit our sister site or contact the radio station directly.</p>
-            </div>
+          </a>
+          <a href="testimonies.html" class="block font-label text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors flex items-center gap-2 pt-2" style="text-decoration:none">
+            <span>View All Healing Testimonies</span>
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </a>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Jesus is LORD Radio</h4>
-                    <p>Broadcasting 24/7</p>
-                    <p>105.3FM & 105.9FM</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="about.html" class="footer-link">Jesusislordradio.org</a>
-                    <a href="repentance.html" class="footer-link">Repentance & Holiness</a>
-                    <a href="library.html" class="footer-link">Library Of Messages</a>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Nakuru, Kenya</p>
-                    <p>+254 715 276091</p>
-                    <p>+254 708 412344</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jesus is LORD Radio. All rights reserved.</p>
-                <p class="warning-note">PLEASE NOTE: The Prophet of the LORD Dr. Owuor does not have any Facebook, Twitter account, or any social media. Anyone claiming to be the Prophet is a fraud.</p>
-            </div>
+      <!-- Contact Quick Links -->
+      <div class="bg-surface-container-low p-6 border border-outline-variant/15">
+        <h4 class="font-label text-xs uppercase tracking-widest font-bold text-primary mb-4">Contact Us — Nakuru, Kenya</h4>
+        <div class="space-y-2">
+          <p class="font-body text-sm opacity-80">Call: (+254) 774 445 851</p>
+          <p class="font-body text-sm opacity-80">Call: (+254) 756 605 399</p>
+          <p class="font-body text-sm opacity-80">SMS: (+254) 727 503 030</p>
+          <a href="mailto:jesusislord.fmradio@gmail.com" class="font-body text-sm text-secondary hover:text-primary transition-colors block" style="text-decoration:none">jesusislord.fmradio@gmail.com</a>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+    </aside>
+  </div>
+</section>
+
+<!-- Bottom CTA: Repent Now -->
+<section class="bg-primary text-white py-24 px-6 md:px-12 text-center">
+  <div class="max-w-3xl mx-auto">
+    <span class="material-symbols-outlined text-secondary text-6xl mb-6 block" style="font-variation-settings:'FILL' 1">church</span>
+    <h2 class="text-5xl font-headline font-black mb-6 tracking-tight">Repentance & Holiness</h2>
+    <p class="text-on-primary-container text-xl font-body italic leading-relaxed mb-10">
+      The time is short. The Bridegroom cometh. Prepare the Way of the LORD.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="repentance.html" class="bg-secondary text-on-secondary px-10 py-5 font-label text-sm uppercase tracking-widest font-bold hover:bg-secondary-container transition-colors" style="text-decoration:none">Repent Now</a>
+      <a href="testimonies.html" class="bg-transparent text-white border border-on-primary-container px-10 py-5 font-label text-sm uppercase tracking-widest font-bold hover:bg-on-primary-container/10 transition-colors" style="text-decoration:none">Healing Testimonies</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-100 text-primary w-full py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between items-start gap-8">
+  <div class="flex flex-col gap-4">
+    <div class="flex items-center gap-3">
+      <img src="https://static.wixstatic.com/media/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png/v1/fill/w_56,h_52,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a5f063_8caa1453b6ec4d0cb0016b8d0036b75d~mv2.png" alt="Logo" class="h-10 w-auto">
+      <span class="font-serif font-bold text-primary text-xl">Jesus is LORD Radio</span>
+    </div>
+    <p class="font-body text-sm opacity-70 max-w-xs">Preparing The Way For The Return of The Messiah! Broadcasting 24/7 from Nakuru, Kenya.</p>
+    <p class="font-label text-xs text-outline uppercase tracking-widest">105.3FM · 105.9FM</p>
+  </div>
+  <div class="flex flex-col gap-2">
+    <span class="font-label text-xs font-bold uppercase tracking-widest text-primary mb-1">Quick Links</span>
+    <a class="font-body text-sm text-primary opacity-70 hover:text-secondary transition-colors" href="index.html" style="text-decoration:none">Home</a>
+    <a class="font-body text-sm text-primary opacity-70 hover:text-secondary transition-colors" href="library.html" style="text-decoration:none">Library of Messages</a>
+    <a class="font-body text-sm text-primary opacity-70 hover:text-secondary transition-colors" href="prophecies.html" style="text-decoration:none">Prophecies</a>
+    <a class="font-body text-sm text-primary opacity-70 hover:text-secondary transition-colors" href="testimonies.html" style="text-decoration:none">Healing Testimonies</a>
+    <a class="font-body text-sm text-primary opacity-70 hover:text-secondary transition-colors" href="repentance.html" style="text-decoration:none">Repentance & Holiness</a>
+  </div>
+  <div class="flex flex-col gap-2">
+    <span class="font-label text-xs font-bold uppercase tracking-widest text-primary mb-1">Contact — Nakuru, Kenya</span>
+    <p class="font-body text-sm opacity-70">Call: (+254) 774 445 851</p>
+    <p class="font-body text-sm opacity-70">Call: (+254) 756 605 399</p>
+    <p class="font-body text-sm opacity-70">SMS: (+254) 727 503 030</p>
+    <a href="mailto:jesusislord.fmradio@gmail.com" class="font-body text-sm text-secondary hover:text-primary transition-colors" style="text-decoration:none">jesusislord.fmradio@gmail.com</a>
+  </div>
+  <div class="md:text-right">
+    <p class="font-body text-xs opacity-60">&copy; 2026 Jesus is LORD Radio. All Rights Reserved.</p>
+    <p class="font-label text-[10px] text-outline mt-2 max-w-xs">NOTICE: Prophet Dr. Owuor has no Facebook, Twitter, or social media. Anyone claiming to be the Prophet is a fraud.</p>
+  </div>
+</footer>
+
+<script>
+function filterCards(cat) {
+  var cards = document.querySelectorAll('.article-card');
+  cards.forEach(function(c) {
+    if (cat === 'all' || c.dataset.category === cat) {
+      c.classList.remove('hidden');
+    } else {
+      c.classList.add('hidden');
+    }
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.remove('bg-primary','text-on-primary','font-bold');
+    b.classList.add('font-medium','text-on-surface');
+  });
+  var active = document.getElementById('btn-' + cat);
+  if (active) {
+    active.classList.add('bg-primary','text-on-primary','font-bold');
+    active.classList.remove('font-medium','text-on-surface');
+  }
+}
+</script>
 </body>
 </html>
