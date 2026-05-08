@@ -2564,7 +2564,7 @@ a:focus-visible {
 }
 
 .evidence-tag:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
     border-color: var(--accent-gold);
     background: linear-gradient(135deg, var(--accent-gold) 0%, #ffeb3b 100%);

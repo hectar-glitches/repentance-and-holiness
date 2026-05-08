@@ -549,21 +549,6 @@ function initBackToTop() {
     });
 }
 
-// 9. ENHANCED EVIDENCE TAG TOOLTIPS
-function initEvidenceTagTooltips() {
-    const evidenceTags = document.querySelectorAll('.evidence-tag');
-    
-    evidenceTags.forEach(tag => {
-        tag.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px) scale(1.05)';
-        });
-        
-        tag.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-}
-
 // 10. KEYBOARD NAVIGATION FOR ACCESSIBILITY
 function initKeyboardNavigation() {
     // ESC key closes mobile menu
@@ -643,7 +628,6 @@ function initEnhancedFeatures() {
     initEnhancedSmoothScroll();
     initParallaxEffect();
     initBackToTop();
-    initEvidenceTagTooltips();
     initKeyboardNavigation();
     initHeroLineAnimation();
     
