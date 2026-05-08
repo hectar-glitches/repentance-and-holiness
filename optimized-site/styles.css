@@ -763,11 +763,6 @@ body {
     animation: pulse 4s ease-in-out infinite;
 }
 
-@keyframes pulse {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-}
-
 .info-card {
     text-align: center;
     color: var(--text-white);
