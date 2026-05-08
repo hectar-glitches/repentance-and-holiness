@@ -478,18 +478,6 @@ function initSmartHeader() {
     }, { passive: true });
 }
 
-// 3. SCROLL ANIMATIONS - DISABLED (was causing jarring mid-scroll appearance)
-function initScrollAnimations() {
-    // Disabled - animations were too disruptive
-    return;
-}
-
-// 4. TIMELINE SEQUENTIAL ANIMATION - DISABLED
-function initTimelineAnimation() {
-    // Disabled - was causing components to appear mid-scroll
-    return;
-}
-
 // 5. ENHANCED SMOOTH SCROLL WITH OFFSET FOR STICKY HEADER
 function initEnhancedSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -513,13 +501,7 @@ function initEnhancedSmoothScroll() {
     });
 }
 
-// 6. PARALLAX EFFECT - DISABLED
-function initParallaxEffect() {
-    // Disabled - causing unwanted movement during scroll
-    return;
-}
-
-// 7. LOADING ANIMATION - SIMPLIFIED
+// 6. LOADING ANIMATION - SIMPLIFIED
 function initPageLoadAnimation() {
     document.body.classList.add('page-loaded');
     // Removed staggered section animation - was too slow
@@ -638,10 +620,7 @@ function initHeroLineAnimation() {
 function initEnhancedFeatures() {
     initMobileMenu();
     initSmartHeader();
-    initScrollAnimations();
-    initTimelineAnimation();
     initEnhancedSmoothScroll();
-    initParallaxEffect();
     initBackToTop();
     initEvidenceTagTooltips();
     initKeyboardNavigation();
@@ -749,17 +728,6 @@ function initEnhancedTimeline() {
             this.style.animation = '';
         });
     });
-    
-    // 4. Timeline navigation helper (for future use)
-    function jumpToTimelineEvent(index) {
-        if (index >= 0 && index < timelineItems.length) {
-            timelineItems[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
-            timelineItems[index].classList.add('timeline-active');
-            setTimeout(() => {
-                timelineItems[index].classList.remove('timeline-active');
-            }, 2000);
-        }
-    }
     
     // 5. Add numbers to timeline items
     timelineItems.forEach((item, index) => {
