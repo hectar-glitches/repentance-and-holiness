@@ -2952,24 +2952,6 @@ a:focus-visible {
     transform: translateY(-100%);
 }
 
-/* 3. SCROLL ANIMATIONS - DISABLED (was jarring) */
-.scroll-animate {
-    /* No animation - elements appear normally */
-}
-
-.scroll-animate.animate-in {
-    /* No animation */
-}
-
-/* 4. TIMELINE SEQUENTIAL ANIMATION - DISABLED */
-.timeline-hidden {
-    /* No animation */
-}
-
-.timeline-visible {
-    /* No animation */
-}
-
 /* 5. BACK TO TOP BUTTON */
 .back-to-top {
     position: fixed;
