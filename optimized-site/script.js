@@ -788,46 +788,6 @@ function initEnhancedTimeline() {
     console.log('✨ Enhanced timeline loaded with ' + timelineItems.length + ' events');
 }
 
-// Add keyframe animations for timeline
-const timelineStyles = document.createElement('style');
-timelineStyles.textContent = `
-    @keyframes iconBounce {
-        0%, 100% { transform: scale(1) rotate(0deg); }
-        25% { transform: scale(1.2) rotate(-5deg); }
-        75% { transform: scale(1.2) rotate(5deg); }
-    }
-    
-    @keyframes tagPulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-    }
-    
-    .tag-ripple {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: inherit;
-        top: 0;
-        left: 0;
-        animation: rippleEffect 0.6s ease-out;
-        pointer-events: none;
-    }
-    
-    @keyframes rippleEffect {
-        0% {
-            transform: scale(0);
-            opacity: 1;
-        }
-        100% {
-            transform: scale(2);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(timelineStyles);
-
 // =============================================
 // TESTIMONY SELECTOR
 // =============================================
