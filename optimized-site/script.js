@@ -1,5 +1,5 @@
 // Radio player functionality with actual streaming
-document.addEventListener('DOMContentLoaded', function() {
+function initCore() {
     const playButton = document.getElementById('playButton');
     let isPlaying = false;
     let audioElement = null;
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.remove('active');
         }
     });
-});
+}
 
 // Performance: Lazy load images if they're added later
 if ('IntersectionObserver' in window) {
@@ -246,9 +246,6 @@ async function initYouTubeVideos() {
     }
 }
 
-// Call YouTube init after DOM is loaded
-document.addEventListener('DOMContentLoaded', initYouTubeVideos);
-
 // Wonders Carousel Functionality
 let currentSlide = 0;
 let autoSlideInterval;
@@ -314,13 +311,6 @@ function stopAutoSlide() {
     if (autoSlideInterval) {
         clearInterval(autoSlideInterval);
     }
-}
-
-// Initialize carousel when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCarousel);
-} else {
-    initCarousel();
 }
 
 // ========================================
@@ -653,13 +643,6 @@ function initEnhancedFeatures() {
     console.log('%c✨ Enhanced interactivity loaded!', 'color: #ffd700; font-weight: bold; font-size: 14px;');
 }
 
-// Fire enhanced features after DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initEnhancedFeatures);
-} else {
-    initEnhancedFeatures();
-}
-
 // ========================================
 // ENHANCED TIMELINE INTERACTIONS
 // ========================================
@@ -847,16 +830,12 @@ function initTestimonySelector() {
     }
 }
 
-// Initialize testimony selector
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTestimonySelector);
-} else {
+// Single top-level DOMContentLoaded handler — calls all init functions in order
+document.addEventListener('DOMContentLoaded', function() {
+    initCore();
+    initYouTubeVideos();
+    initCarousel();
+    initEnhancedFeatures();
     initTestimonySelector();
-}
-
-// Initialize timeline enhancements
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initEnhancedTimeline);
-} else {
     initEnhancedTimeline();
-}
+});
