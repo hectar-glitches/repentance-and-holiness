@@ -174,6 +174,10 @@ const YOUTUBE_CONFIG = {
 
 // Fetch latest videos from YouTube
 async function fetchLatestVideos() {
+    if (!YOUTUBE_CONFIG.apiKey || YOUTUBE_CONFIG.apiKey.startsWith('YOUR_')) {
+        console.warn('YouTube API key is not configured. Skipping video fetch.');
+        return null;
+    }
     try {
         const response = await fetch(
             `https://www.googleapis.com/youtube/v3/search?` +
