@@ -1,0 +1,316 @@
+<!-- Events & Ministry Gatherings -->
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sacred Gatherings | The Sovereign Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#2a4386",
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "tertiary-container": "#272929",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#241a00",
+                        "error": "#ba1a1a",
+                        "surface": "#f9f9f9",
+                        "tertiary": "#121515",
+                        "outline": "#757682",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9f9",
+                        "primary": "#00113a",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#002366",
+                        "outline-variant": "#c5c6d2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#444650",
+                        "on-primary-fixed": "#00174a",
+                        "surface-tint": "#435b9f",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-container": "#758dd5",
+                        "on-background": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary-container": "#745c00",
+                        "inverse-primary": "#b3c5ff",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#fed65b",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "on-error-container": "#93000a",
+                        "secondary": "#735c00",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-variant": "#e2e2e2",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary-container": "#8f9090",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "primary-fixed-dim": "#b3c5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Newsreader", "serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .dove-watermark {
+            opacity: 0.05;
+            pointer-events: none;
+            position: absolute;
+            z-index: 0;
+        }
+        .sovereign-gradient {
+            background: linear-gradient(to bottom, #00113a, #002366);
+        }
+        .tonal-shift {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/85 backdrop-blur-md shadow-sm flex justify-between items-center px-8 py-4 max-w-full font-serif tracking-tight">
+<div class="flex items-center gap-6">
+<div class="text-xl font-bold uppercase tracking-widest text-blue-900 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                The Sovereign Archive
+            </div>
+<div class="hidden md:flex gap-8 ml-8">
+<a class="text-slate-600 font-medium hover:text-blue-800 hover:text-yellow-600 transition-colors duration-200" href="#">Discipleship</a>
+<a class="text-blue-900 border-b-2 border-yellow-600 pb-1 font-bold" href="#">Conferences</a>
+<a class="text-slate-600 font-medium hover:text-blue-800 hover:text-yellow-600 transition-colors duration-200" href="#">Crusades</a>
+<a class="text-slate-600 font-medium hover:text-blue-800 hover:text-yellow-600 transition-colors duration-200" href="#">Archive</a>
+</div>
+</div>
+<div class="flex items-center gap-4 text-blue-900">
+<span class="material-symbols-outlined cursor-pointer hover:text-yellow-600 transition-colors duration-200">search</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-yellow-600 transition-colors duration-200" data-icon="menu">menu</span>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[716px] w-full flex items-center justify-center overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover grayscale-[0.3] brightness-[0.4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX_iuI4uJEFT9qbyQ4j2NegTBTy18ylCuRlIgh6dDsDFGAiW6SzrMb5lvGIpXdw-hUbJfFpw_41KPhr8TuRixuhsBMrUsGMiIAh7FCRu5pDTHwvqwprygdDLCAr-tVMBpHdDFjbxRZFxaHSYkILJIJe7Yla61lo5gMMYtcJ3fkZePcnSRokO3il28N5BYipu9nP_vJ5_l4ts1X8NNldein3xuaJHr3KFfw5Vp72lFB-xag0VKR0S1J4danEyJyjiNg0_nYYZf2iVU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="relative z-10 text-center px-4 max-w-5xl">
+<div class="flex justify-center mb-6">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-6xl" style="font-variation-settings: 'FILL' 1;">universal_currency</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl text-on-primary font-extrabold tracking-tight mb-4">
+                    Sacred Gatherings
+                </h1>
+<p class="font-headline italic text-2xl text-secondary-fixed-dim max-w-2xl mx-auto">
+                    "Repent, for the Kingdom of Heaven is at hand. Prepare the way of the Lord."
+                </p>
+</div>
+<!-- Floating Dove Badge (Watermark) -->
+<div class="absolute top-10 right-10 opacity-30 select-none">
+<span class="material-symbols-outlined text-[120px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 0;">raven</span>
+</div>
+</section>
+<!-- Filter System -->
+<section class="bg-surface-container py-6 sticky top-[72px] z-40 border-b border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="font-label text-xs uppercase tracking-widest text-outline">Refine Records</span>
+</div>
+<div class="flex gap-4">
+<button class="font-label text-sm font-bold bg-primary text-on-primary px-6 py-2 transition-all hover:bg-primary-container">All Decrees</button>
+<button class="font-label text-sm font-medium text-on-surface hover:bg-surface-container-high px-6 py-2 transition-all">Discipleship</button>
+<button class="font-label text-sm font-medium text-on-surface hover:bg-surface-container-high px-6 py-2 transition-all">Global Conferences</button>
+<button class="font-label text-sm font-medium text-on-surface hover:bg-surface-container-high px-6 py-2 transition-all">Healing Crusades</button>
+</div>
+<div class="hidden lg:block text-outline-variant italic text-sm">
+                    Displaying chronological archives of the end-time mission.
+                </div>
+</div>
+</section>
+<!-- High Density Content Grid -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Main Events Timeline (8 Cols) -->
+<div class="md:col-span-8 space-y-16">
+<header class="flex items-end justify-between border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline text-4xl font-bold text-primary tracking-tighter">Upcoming Decrees</h2>
+<span class="font-label text-xs uppercase text-secondary font-bold tracking-[0.2em]">Live Registry</span>
+</header>
+<!-- Event Card 1 -->
+<article class="group relative bg-surface-container-lowest p-8 flex flex-col md:flex-row gap-8 transition-all hover:bg-white shadow-[0_4px_20px_rgba(0,17,58,0.04)]">
+<div class="w-full md:w-1/3 aspect-[4/5] relative overflow-hidden bg-surface-container">
+<img class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBomAV4t-N68qB0K_kmWIhp0FuMCyIKfr44y21kjE-osKpfSykRiyYZCNlpkTou8aPn6m313kfRnHdoga1_Of8jNJzAAdqRhCQBKnLfmcUKt878xonOXQBxvALS8EY6TYFW0eQhm9shJ4rEVZVSQAIx5jO-50KDK7t7WqEM4UrYrnmPBtxn0i9Uso4v-pxeRDIe8Y559DUmUEX63s6IbJEh5Pyb6wAHTIPDRPFUi6Yjo97lZEWb_FLpC-1ZVxo0x9JVjIUCxxfpcsE"/>
+<div class="absolute top-0 left-0 bg-secondary text-on-secondary font-label text-[10px] font-black uppercase tracking-tighter px-3 py-1">
+                                Urgent
+                            </div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label text-xs font-bold text-secondary tracking-widest uppercase">Global Conference</span>
+<span class="text-outline-variant">&bull;</span>
+<span class="font-label text-xs text-outline">Archive ID: 777-B</span>
+</div>
+<h3 class="font-headline text-3xl font-extrabold text-primary leading-tight group-hover:text-primary-container transition-colors">The Grand National Repentance Decree</h3>
+<p class="mt-4 text-on-surface/70 leading-relaxed font-body text-lg">
+                                    A divine convocation of the faithful. This gathering marks the sealing of the testimony in the heart of the capital. Expect the manifestation of the Holy Seal.
+                                </p>
+</div>
+<div class="mt-8 flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-label text-xs uppercase tracking-wider">Nairobi National Stadium</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span class="font-label text-xs uppercase tracking-wider">August 14 - 16, 2024</span>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 font-label text-xs font-black uppercase tracking-widest hover:bg-secondary transition-all">Prepare Now</button>
+</div>
+</div>
+</article>
+<!-- Event Card 2 -->
+<article class="group relative bg-surface-container-lowest p-8 flex flex-col md:flex-row gap-8 transition-all hover:bg-white shadow-[0_4px_20px_rgba(0,17,58,0.04)]">
+<div class="w-full md:w-1/3 aspect-[4/5] relative overflow-hidden bg-surface-container">
+<img class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTpGVaKDsJi_ynrB2s9pQeszDsFBdKyWKGWld8p6uoFDXoJ7HKlLABju-xSigZA6___d1RqrTzFMVJW3W0I37sC1N4dnHXjM12chD87NyF24JqUYD4uUXxIHJ6nwSm2rHeEDDLp8rnCk7dz666w_kKGWeCH1qcucOuL-nNxZ7p6Rf8bUPKgTZMMeuyDgA2nCRtq4NngurZM4ad7EELV_UKm_7mrB4eUs_TXG13nlzisZ71t8rZDZfcr10VsjK0TuQ1Nvt2T9WBY38"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label text-xs font-bold text-secondary tracking-widest uppercase">Healing Crusade</span>
+<span class="text-outline-variant">&bull;</span>
+<span class="font-label text-xs text-outline">Archive ID: 442-C</span>
+</div>
+<h3 class="font-headline text-3xl font-extrabold text-primary leading-tight group-hover:text-primary-container transition-colors">The Visitation of the Great Physician</h3>
+<p class="mt-4 text-on-surface/70 leading-relaxed font-body text-lg">
+                                    Documented miracles and the heavy presence of the Holy Spirit. An asymmetric layout of healing clinics and prayer stations for the broken.
+                                </p>
+</div>
+<div class="mt-8 flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-label text-xs uppercase tracking-wider">Lagos International Grounds</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span class="font-label text-xs uppercase tracking-wider">September 02, 2024</span>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 font-label text-xs font-black uppercase tracking-widest hover:bg-secondary transition-all">Join Mission</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Sidebar (4 Cols) -->
+<aside class="md:col-span-4 space-y-12">
+<div class="bg-surface-container p-8 relative overflow-hidden">
+<div class="absolute -right-8 -top-8 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h4 class="font-headline text-2xl font-bold text-primary mb-4 border-b border-outline-variant pb-2">Sacred Evidence</h4>
+<p class="font-body text-sm text-on-surface-variant mb-6">Visual records of past visitations and the fulfillment of prophecy across the nations.</p>
+<div class="grid grid-cols-2 gap-2">
+<div class="aspect-square bg-slate-300 relative group overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCudYIzPTVdUzIRPAiDCFb8q_XiDr4bdZN8jN6-lJTodaMuDftvhir6HkPklZ01-94sVhULpAW4RYJQ1Wu-au1xsAt3_M1BYrnuzHKCk0n8O1qUBjcEVsiau_wzLieFfmb3fi3tUWlaNtcT1pDtHcb1ZbCQRTWz-xFMam94mpxcd39gozyTD3D1qHVVP4_tiVJZV7c7VfLvLrc1nUk1fZmhnlumR2lxYeC1uYTZeFeY7BafQvUKCkf5LlS0ARtJvbuRs25tH5jlZ-Y"/>
+</div>
+<div class="aspect-square bg-slate-300 relative group overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR4bWt2NXIUvesAPTWaxAdFQreecj6E6mrXj4-uK94zos3ATzM5s5OFa30uy3AFYjpLgmYnRsWrgXNPDx8nsufV63JrjS_DdAr56HKW92ba7sra3C_7D058-Uip996of4lJcSKrlwgXyXPg3-TkBjWYQALYybkM79CW_4Zgtp9Cr5hDTiVaTTrnYcbZhXkj07dyv8NH1vDaNxOabcGoDq0fRWdWCgeDMQYgKM8GnkIVr07_LTC30FFTdI10rg1cmafSEH9Ob_sDKg"/>
+</div>
+<div class="aspect-square bg-slate-300 relative group overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr9i2IXWmb3V-gTYxppcAKH7Awpios-IXstbKWkzrzddv3CitPhGGL-v8z_WJ5ZjBI0yuOfqwshJl8Tvgd4soFRK3fj229g_UDjaSLj4LZGY1T0kco5i161PIYNc09Q06ceW2cx0sjEPB6PFAr-4AHS-29VpHqMSf9bg_CnTdX2b_5Egrqk3LjDK_L8muXjXT5GaIZ8EPya75vQUjNitgk2fhiSzXrtnfvcx_nbD0AQAK9aWWSjY3MANOg1ksfQ8HuE-39WenJCEg"/>
+</div>
+<div class="aspect-square bg-slate-300 relative group overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_pZI7pK9l_9A86P_fzIE-STFscaOGehDtwzwQRXhkibVUKOYUJvel2yXrmO7n_zmCVGSV92TdiaiEHMIbfcWy4pNgbUZgaaeha7xE_0_kf0YRvE4pZEt6yF4C4jNm_6QJ_Z608CuO7FsW-VDtMAuvfvX482sfUmcD18lVoDZK3krC9Ln40RH6-lp1LK3_02ykGq_nZ8vyFsPWgmSaGRZeMtunE6G_vTUJtG-QvtcJnCR51mBPSqhCYkO2CJngas-ZsX-irCi3zyY"/>
+</div>
+</div>
+<a class="inline-block mt-6 font-label text-[10px] font-black uppercase tracking-[0.3em] text-secondary hover:text-primary transition-colors underline underline-offset-8" href="#">Access Full Archives</a>
+</div>
+<!-- The Prophetic Warning -->
+<div class="sovereign-gradient p-10 text-on-primary relative">
+<span class="material-symbols-outlined text-secondary absolute top-6 right-6 opacity-40 text-4xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h4 class="font-headline text-3xl font-bold mb-4">The Hour is Near</h4>
+<p class="font-body text-blue-200/80 leading-relaxed mb-6">
+                            "I have seen the heavens opened and the message delivered. There is no time for delay. The gatherings listed are not mere events, but divine appointments for the soul."
+                         </p>
+<div class="border-t border-blue-400/20 pt-4 flex items-center gap-3">
+<div class="w-10 h-10 bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary">edit_square</span>
+</div>
+<div class="font-label text-[10px] uppercase tracking-widest font-bold">
+                                Sealed by the Archive Office
+                            </div>
+</div>
+</div>
+<!-- Newsletter Inset -->
+<div class="bg-surface-container-high p-8">
+<h4 class="font-label text-xs font-black uppercase tracking-[0.2em] text-primary mb-4">Registry Notification</h4>
+<div class="space-y-4">
+<input class="w-full bg-transparent border-b border-outline text-xs py-3 px-0 focus:border-secondary transition-colors placeholder:text-outline-variant font-label uppercase tracking-widest outline-none" placeholder="ENTER SACRED IDENTITY (EMAIL)" type="email"/>
+<button class="w-full bg-secondary text-on-secondary py-3 font-label text-xs font-black uppercase tracking-widest hover:bg-on-secondary-container transition-colors">Enlist for Alerts</button>
+</div>
+</div>
+</aside>
+</div>
+</section>
+<!-- Secondary CTA Section -->
+<section class="bg-slate-900 py-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-[600px] text-white">auto_awesome</span>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto px-6">
+<h2 class="font-headline text-4xl md:text-5xl text-on-primary font-bold mb-8 italic">Cannot reach the physical ground?</h2>
+<p class="text-blue-200 text-lg font-body mb-10 leading-relaxed">
+                    The Archive extends beyond physical borders. Join our digital prayer chain and watch live streaming of the Prophetic Word as it unfolds in real-time across the globe.
+                 </p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-white text-primary px-10 py-4 font-label text-xs font-black uppercase tracking-[0.2em] hover:bg-secondary hover:text-on-secondary transition-all">Watch Live Stream</button>
+<button class="border border-white/30 text-white px-10 py-4 font-label text-xs font-black uppercase tracking-[0.2em] hover:bg-white/10 transition-all">Request Prayer Record</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-200 w-full border-t-0 flex flex-col md:flex-row justify-between items-center px-12 py-8 font-sans text-xs tracking-widest uppercase text-blue-950">
+<div class="mb-4 md:mb-0 font-bold opacity-70">
+            &copy; THE SOVEREIGN ARCHIVE. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-10">
+<a class="text-slate-500 hover:text-blue-700 hover:underline decoration-yellow-600 underline-offset-4 transition-all duration-300" href="#">Sacred Decrees</a>
+<a class="text-slate-500 hover:text-blue-700 hover:underline decoration-yellow-600 underline-offset-4 transition-all duration-300" href="#">Privacy Ledger</a>
+<a class="text-slate-500 hover:text-blue-700 hover:underline decoration-yellow-600 underline-offset-4 transition-all duration-300" href="#">Contact Herald</a>
+</div>
+<div class="mt-4 md:mt-0 opacity-40">
+<span class="material-symbols-outlined">shield</span>
+</div>
+</footer>
+</body></html>
