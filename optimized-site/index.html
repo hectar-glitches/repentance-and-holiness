@@ -460,8 +460,15 @@ Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </div>
 </div>
 <div class="w-full md:w-1/2 h-[500px] bg-on-primary-container/10 p-2">
-<div class="w-full h-full relative group">
-<iframe class="w-full h-full" src="https://www.youtube.com/embed/mbVHlWPNLjA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="liveRadioWrap" class="w-full h-full relative group">
+<iframe id="ytLiveFrame" class="w-full h-full" src="https://www.youtube.com/embed/live_stream?channel=UCqdgi-yU4fVlOhKZLrz24rw&autoplay=1&mute=1&enablejsapi=1&playsinline=1&rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="liveRadioOffair" class="absolute inset-0 z-10 bg-primary flex flex-col items-center justify-center text-center px-8">
+<span class="material-symbols-outlined text-6xl text-secondary mb-4" data-icon="podcasts">podcasts</span>
+<h4 class="text-2xl font-headline font-bold mb-2">Currently Off Air</h4>
+<p class="text-on-primary-container/70 font-body italic mb-6 max-w-sm">The live YouTube broadcast isn't streaming right now. Tune in on 105.3FM / 105.9FM, or catch past broadcasts below.</p>
+<a class="bg-secondary text-on-secondary px-6 py-3 text-xs font-label uppercase tracking-widest font-bold" href="https://www.youtube.com/@repentpreparetheway/streams" target="_blank" style="text-decoration:none">Past Broadcasts</a>
+<span id="liveRadioChecking" class="font-label text-[10px] uppercase tracking-widest text-on-primary-container/50 mt-6">Checking live status…</span>
+</div>
 </div>
 </div>
 </div>
@@ -495,4 +502,40 @@ Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
 <p class="font-serif Newsreader body text-xs opacity-60">&copy; The Sovereign Archive. Repent and Prepare Ministry. All Rights Reserved.</p>
 </div>
 </footer>
+<!-- Live radio: reveal the YouTube broadcast only when the channel is actually live -->
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+(function () {
+  var settled = false, player, fallbackTimer;
+  function reveal(isLive) {
+    if (settled) return;
+    settled = true;
+    if (fallbackTimer) clearTimeout(fallbackTimer);
+    var offair = document.getElementById('liveRadioOffair');
+    if (isLive) {
+      if (offair) offair.classList.add('hidden');
+    } else {
+      var frame = document.getElementById('ytLiveFrame');
+      if (frame) frame.style.display = 'none';
+      var checking = document.getElementById('liveRadioChecking');
+      if (checking) checking.style.display = 'none';
+    }
+  }
+  window.onYouTubeIframeAPIReady = function () {
+    var frame = document.getElementById('ytLiveFrame');
+    if (!frame || !window.YT || !YT.Player) { reveal(false); return; }
+    player = new YT.Player('ytLiveFrame', {
+      events: {
+        'onStateChange': function (e) {
+          if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.BUFFERING || e.data === YT.PlayerState.CUED) {
+            reveal(true);
+          }
+        },
+        'onError': function () { reveal(false); }
+      }
+    });
+    fallbackTimer = setTimeout(function () { reveal(false); }, 8000);
+  };
+})();
+</script>
 </body></html>
